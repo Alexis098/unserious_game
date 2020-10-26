@@ -68,7 +68,7 @@ img{
   .btns-list{
     display: flex;
     flex-wrap: wrap;
-    max-width: 500px;
+    max-width: 1000px;
     justify-content: center;
   }
   .btn{
@@ -110,3 +110,39 @@ h2 {
       transform: rotate(0deg) scale(1);
     }
   }
+.signature{
+  background-color: #222;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left : 20px;
+  padding-right: 20px;
+  position : fixed; /**permet (par rapport à la fenêtre du navigateur et non la page web entière) de garder le contenu de la balise ayant cette classe à la même position indépendemment du scrolling de la page**/
+  top:0px;
+  box-shadow: 5px 5px 15px 5px #000000;
+  right:20px;
+  width:150px;
+  border-bottom-right-radius:6px ;
+  border-bottom-left-radius:6px;
+}
+.signature a{ /**permet d'appliquer une couleur à un lien <a>**/
+  font-family: Arial, Helvetica, sans-serif;
+  color:#f0f0f0;
+  text-decoration: none;
+  font-size:10px;
+}
+
+.anim {
+  Animation-name : fade ;
+  Animation-delay : 1s;
+  Animation-duration : 2s;
+  Animation-iteration-count : infinite;
+}
+
+@keyframes fade {
+  From {
+    Opacity : 1;
+  }
+  To {
+    Opacity : 0;
+  }
+}

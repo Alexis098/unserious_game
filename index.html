@@ -4,19 +4,28 @@
   
   <!--  Meta  -->
   <meta charset="UTF-8" />
+  <meta content='width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0' name='viewport' />
   <title>My New Pen!</title>
+  
   
   <!--  Styles  -->
   <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" media="screen and (max-width: 600px)" href="styles/phone.css" />
 </head>
 <body>
   <img src="https://media.giphy.com/media/l3vQXGZtqwRo1Zbe8/giphy.gif">
   <h1>
  Sais-tu programmer ? <!-- la balise <a> sert à créer des liens vers d'autres pages web -->
   </h1><!--href="" est un attribut de balise et rend ce qu'il y a dans les balises cliquable-->
-  <a class="btn" href="perdu.html">Oui</a> <!-- ici, pas de target donc il s'ouvre à la place de la page précédente -->
-  <a class="btn" href="gagne.html" >Non</a> <!-- target sert à choisir la ciuble sur laquelle va s'ouvrir la nouvelle page, ici c'est blank donc sur un nouvel onglet -->
+  <div class="btns-list">
+    <a class="btn" href="perdu.html">Oui</a> <!-- ici, pas de target donc il s'ouvre à la place de la page précédente -->
+    <a class="btn" href="gagne.html" >Non</a> <!-- target sert à choisir la ciuble sur laquelle va s'ouvrir la nouvelle page, ici c'est blank donc sur un nouvel onglet -->
+    </div>
   
+  <!-- la balise div est l'équivalent d'un calque dans photoshop, c'est pour mettre un élément de base-->
+  <div class="signature">
+    <a href="https://github.com/Alexis098">Alexis HENG</a>
+  </div>
   
   <!-- Scripts -->
   <script src="scripts/index.js"></script>
