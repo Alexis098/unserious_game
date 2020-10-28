@@ -16,10 +16,10 @@ body {
 }
 /** l'image fait toujours la même hauteur **/
 img{
-  margin: 40px;
-  border: 1px solid yellow;
-  padding: 10px;
-  height: 40vh;
+  margin: 40px; /** éloigne tout ce que entoure le gif de 40 pixels **/
+  border: 1px solid yellow;/** créer un cadre jaune d'un pixel d'épaisseur autour des gifs **/
+  padding: 10px; /** éloigne le cadre du gif de 10 pixels **/
+  height: 40vh; 
   width: auto;
 }
 /** les titres ne sont pas trop grands **/
@@ -28,7 +28,7 @@ h1,h2{
   line-height: 1.5;
 }
   
-  
+/** Tailles des textes **/  
 h1{
   font-size: 30px;
 }
@@ -55,9 +55,9 @@ h2{
 .btn:hover {
 	background-color:#fff671;
 }
-.btn:active {
+.btn:active { /** attribue les propriétés suivantes au bouton quand on clique dessus **/
 	position:relative;
-	top:1px;
+	top:1px; /** descend le bouton d'un pixel quand on clique dessus **/
 }
 
 
@@ -70,10 +70,10 @@ h2{
   display: flex;
   flex-wrap: wrap;
   max-width: 1000px;
-  justify-content: center;
+  justify-content: center; /** centre le cntenu du bouton **/
 }
 .btn{
-  margin: 15px;
+  margin: 15px; 
 }
   
   
@@ -90,7 +90,7 @@ h2 {
   animation-iteration-count: infinite;
 }
   
-@keyframes fade-in {
+@keyframes fade-in { /** animation utilisée pour les balises h1 et h2 **/
   0% {
     opacity: 0;
   }
@@ -99,9 +99,9 @@ h2 {
   }
 }
   
-/** une animation de très bon goût **/
-.yeah{
-  animation: yeah 2s ease-out;
+/** une animation de rotation **/
+.rotation{
+  animation: rotation 2s ease-out;
 }
 @keyframes yeah{
   0%{
@@ -113,7 +113,8 @@ h2 {
 }
 .signature{
   background-color: #222;
-  padding-top: 10px;
+  /** les padding permettent d'agrandir la taille du bouton de signature **/
+  padding-top: 10px; 
   padding-bottom: 10px;
   padding-left : 20px;
   padding-right: 20px;
@@ -122,24 +123,25 @@ h2 {
   box-shadow: 5px 5px 15px 5px #000000;
   right:20px;
   width:150px;
+  /** border radius permet d'arrondir les bords du bouton de signature, ici les coins gauche et droit du bas **/
   border-bottom-right-radius:6px ;
   border-bottom-left-radius:6px;
 }
 .signature a{ /**permet d'appliquer une couleur à un lien <a>**/
   font-family: Arial, Helvetica, sans-serif;
   color:#f0f0f0;
-  text-decoration: none;
+  text-decoration: none; /** permet d'enlever la couleur bleue et le soulignage du lien **/
   font-size:10px;
 }
 
-.anim {
+.anim { /** animation en fondu **/
   Animation-name : fade ;
-  Animation-delay : 1s;
-  Animation-duration : 2s;
-  Animation-iteration-count : infinite;
+  Animation-delay : 1s; /** pause entre chaque animation **/
+  Animation-duration : 2s; /** durée de l'animation **/
+  Animation-iteration-count : infinite; /** l'animation tourne en boucle **/
 }
 
-@keyframes fade {
+@keyframes fade { /** créer le fondu de l'animation **/
   From {
     Opacity : 1;
   }
