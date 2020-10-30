@@ -7,18 +7,19 @@
     <title>Fun.html</title> <!--balise permettant de donner un titre à la page html-->
     <link rel="icon" href="https://i.pinimg.com/originals/cf/7e/54/cf7e545a200916345c62901f3606a8f0.png"><!--balise pour afficher la favicon du site-->
     <!--  Styles  -->
-    <link rel="stylesheet" href="styles/style.css">
-    <link rel="stylesheet" media="screen and (max-width: 600px)" href="styles/phone.css" />
+    <link rel="stylesheet" href="styles/style.css"> <!--permet de faire le lien entre la page html et la feuille de style pour attribuer les paramètres de la feuille de style sur la page html-->
+    <link rel="stylesheet" media="screen and (max-width: 600px)" href="styles/phone.css" /><!--si la page est affichée sur un écran de 600 pixels de largeur maximum, c'est feuille de style est activée pour cette page html-->
   </head>
 
   <body>
     <img src="https://media.giphy.com/media/l3vQXGZtqwRo1Zbe8/giphy.gif">
-    <h1>Sais-tu programmer ? <!-- la balise <a> sert à créer des liens vers d'autres pages web --></h1>
-    <!--href="" est un attribut de balise et rend ce qu'il y a dans les balises cliquable-->
-    <div class="btns-list">
+    <h1>Sais-tu programmer ?</h1>
+    <!--href="" est un attribut de balise et rend ce qu'il y a dans les balises <a> cliquable -->
+    <div class="btns-list"><!--l'attribut class permet de faire appel à une classe css contenu dans la feuille de style et sera donc uniquement aux balises ayant cette classe-->
+      <!-- la balise <a> sert à créer des liens vers d'autres pages web -->
       <a class="btn" href="perdu.html">Oui</a> <!-- ici, pas de target donc il s'ouvre à la place de la page précédente -->
       <a class="btn" href="gagne.html" >Non</a> <!-- target sert à choisir la ciuble sur laquelle va s'ouvrir la nouvelle page, ici c'est blank donc sur un nouvel onglet -->
-    </div><!-- la balise div est l'équivalent d'un calque dans photoshop, c'est pour mettre un élément de base-->
+    </div><!-- la balise div est l'équivalent d'un calque dans photoshop-->
     <div class="signature">
       <a href="https://github.com/Alexis098">Alexis HENG</a>
     </div>
