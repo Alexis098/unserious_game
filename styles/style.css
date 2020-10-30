@@ -50,7 +50,7 @@ h2{
 	padding:16px 31px;
 	text-decoration:none;
   text-shadow:0px 1px 0px #ffffff;
-  transition: 0.4s;
+  transition: 0.4s; /** ici, fait une transition pour passer le fond du bouton de la couleur blanche à jaune progressivement **/
 }
 .btn:hover { /** au survol de la souris, le fond du bouton devient jaune **/
 	background-color:#fff671;
